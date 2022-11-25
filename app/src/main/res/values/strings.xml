@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">One Cashier</string>
+    <string name="title">Title</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_loading_title_dialog">Loading</string>
+    <string name="plan_documents">Plan Documents</string>
+    <string name="form_and_information">Form and Information</string>
+    <string name="label_profil_title_page">Title Page</string>
+    <string name="keterangan">Apabila diaktifkan akan memberikan discount harga tranksaksi tanpa batasan waktu.</string>
+
+    <array name="outlet">
+        <item>Outlet A</item>
+    </array>
+
+    <array name="kategori">
+        <item>KATEGORI 1</item>
+        <item>KATEGORI 2</item>
+        <item>KATEGORI 3</item>
+
+    </array>
+
+    <array name="karyawan">
+        <item>-- Pilih Karyawan --</item>
+        <item>Karyawan 1</item>
+        <item>Karyawan 2</item>
+        <item>Karyawan 3</item>
+    </array>
+
+    <array name="jenisUsaha">
+        <item>-- Jenis Usaha --</item>
+        <item>Usaha 1</item>
+        <item>Usaha 2</item>
+        <item>Usaha 3</item>
+    </array>
+
+    <array name="lamaBisnis">
+        <item>-- Lama Bisnis --</item>
+        <item>1 Tahun</item>
+        <item>2 Tahun</item>
+        <item>3 Tahun</item>
+    </array>
+
+    <array name="lokasiUsaha">
+        <item>-- Lokasi Usaha --</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+    </array>
+
+    <array name="satuan">
+        <item>Botol</item>
+        <item>Kg</item>
+        <item>Pcs</item>
+    </array>
+
+    <array name="baseSpinner">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </array>
+
+    <array name="bankEdc">
+        <item>BRI</item>
+        <item>BNI</item>
+        <item>BCA</item>
+        <item>MANDIRI</item>
+        <item>BSI</item>
+        <item>BANK ACEH</item>
+    </array>
+
+</resources>

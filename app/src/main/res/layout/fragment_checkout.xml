@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.checkout.CheckoutFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout3"
+        android:paddingHorizontal="@dimen/margin20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.ilisium.onecashier.helper.AutoFitGridRecyclerView
+                    android:id="@+id/rvCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_checkout" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10">
+
+                    <TextView
+                        android:id="@+id/txtAddPesanan"
+                        style="@style/textMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="Ada lagi pesanannya ?"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtmasih"
+                        style="@style/textRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:text="Masih bisa nambah menu lain, ya."
+                        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtAddPesanan" />
+
+                    <Button
+                        android:id="@+id/btnAdd"
+                        style="@style/textRegular"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_marginVertical="@dimen/margin10"
+                        android:layout_marginRight="@dimen/margin10"
+                        android:background="@drawable/border_button"
+                        android:text="Tambah"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@color/light_gray" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:layout_marginBottom="@dimen/margin10"
+                    app:cardCornerRadius="@dimen/margin10"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/textMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ringkasan pesanan"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin15"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textRegular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Sudah termasuk Pajak" />
+
+                            <TextView
+                                android:id="@+id/totalTax"
+                                style="@style/textRegular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-"
+                                android:textAlignment="textEnd" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textRegular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Termasuk diskon" />
+
+                            <TextView
+                                android:id="@+id/totalDiskon"
+                                style="@style/textRegular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-"
+                                android:textAlignment="textEnd" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/textRegular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Total harga" />
+
+                            <TextView
+                                android:id="@+id/totalPrice"
+                                style="@style/textRegular"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-"
+                                android:textAlignment="textEnd" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:layout_marginBottom="@dimen/margin40"
+                    app:cardCornerRadius="@dimen/margin10"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/textRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Metode Pembayaran" />
+
+                        <com.ilisium.onecashier.helper.AutoFitGridRecyclerView
+                            android:id="@+id/rvMetode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin10"
+                            android:layout_marginTop="@dimen/margin5"
+                            android:columnWidth="150dp"
+                            tools:itemCount="2"
+                            tools:listitem="@layout/item_tunai" />
+
+                        <LinearLayout
+                            android:id="@+id/lyTunai"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jumlah bayar" />
+
+                            <EditText
+                                android:id="@+id/edtJumlahBayar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin10"
+                                android:layout_marginBottom="@dimen/margin10"
+                                android:background="@drawable/bg_border_edit_text"
+                                android:hint="Masukkan jumlah bayar"
+                                android:inputType="number"
+                                android:paddingHorizontal="@dimen/margin10"
+                                android:paddingVertical="@dimen/margin15" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyEdc"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin10"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/textRegular"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bank EDC"/>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin10"
+                                    android:background="@drawable/bg_border_edit_text"
+                                    android:paddingHorizontal="@dimen/margin5"
+                                    android:paddingVertical="@dimen/margin15">
+
+                                    <Spinner
+                                        android:id="@+id/spEdcBank"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:entries="@array/bankEdc"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="@dimen/margin10"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/textRegular"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="No Transaksi EDC" />
+
+                                <EditText
+                                    android:id="@+id/edtNoEdc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/margin10"
+                                    android:layout_marginBottom="@dimen/margin10"
+                                    android:background="@drawable/bg_border_edit_text"
+                                    android:hint="Masukkan No Transaksi EDC"
+                                    android:singleLine="true"
+                                    android:maxLines="1"
+                                    android:paddingHorizontal="@dimen/margin10"
+                                    android:paddingVertical="@dimen/margin15" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/empty"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/textMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Keranjang kosong"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgEmpty" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ViewFlipper>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin20"
+        android:background="@color/white"
+        android:elevation="@dimen/margin10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnCetak"
+            style="@style/textRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:background="@drawable/bg_rounded_btn_login"
+            android:text="Lanjut"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

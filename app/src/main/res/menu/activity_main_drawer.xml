@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_kasir"
+            android:icon="@drawable/ic_baseline_point_of_sale_24"
+            android:title="Kasir" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_kasir"-->
+<!--            android:icon="@drawable/ic_baseline_point_of_sale_24"-->
+<!--            android:title="Kasir" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_cart"-->
+<!--            android:icon="@drawable/ic_baseline_shopping_cart_24"-->
+<!--            android:title="Keranjang" />-->
+
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="History" />
+
+        <item
+            android:id="@+id/nav_buka_kasir"
+            android:icon="@drawable/ic_baseline_curtains_24"
+            android:title="Buka kasir" />
+
+        <item
+            android:id="@+id/nav_tutup_kasir"
+            android:icon="@drawable/ic_baseline_curtains_closed_24"
+            android:title="Tutup kasir" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Logout kasir" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_pengaturan"-->
+<!--            android:icon="@drawable/ic_baseline_settings_applications_24"-->
+<!--            android:title="Pengaturan" />-->
+
+    </group>
+
+</menu>

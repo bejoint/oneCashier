@@ -1,0 +1,229 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/grey_5"
+    android:id="@+id/lyt_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginStart="@dimen/margin5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/grey_10" />
+
+        <ImageView
+            android:layout_width="@dimen/margin10"
+            android:layout_height="@dimen/margin10"
+            android:layout_marginTop="@dimen/margin15"
+            app:srcCompat="@drawable/shape_rounded_orange"
+            app:tint="@color/red_warning" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin5"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:visibility="visible"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin15"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/status_transaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/shape_rounded_grey"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Menunggu Konfirmasi"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60"
+                    android:textStyle="bold" />
+
+
+                <!--               <TextView-->
+                <!--                   android:layout_alignParentEnd="true"-->
+                <!--                   android:textStyle="bold"-->
+                <!--                   android:padding="10dp"-->
+                <!--                   android:id="@+id/track_order"-->
+                <!--                   android:layout_width="wrap_content"-->
+                <!--                   android:layout_height="wrap_content"-->
+                <!--                   android:gravity="center"-->
+                <!--                   android:background="@drawable/shape_rounded_grey"-->
+                <!--                   android:text="Lacak Belanjaan"-->
+                <!--                   android:textAppearance="@style/TextAppearance.AppCompat.Caption"-->
+                <!--                   android:textColor="@color/grey_60" />-->
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/track_order"
+                    style="@style/textRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:text="Barang Terkirim"
+                    android:textAllCaps="false" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nomor_transaksi"
+                    android:text="Boba"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/textMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:gravity="end"
+                    android:id="@+id/tanggal_transaksi1"
+                    android:text="31 Maret 2020"
+                    android:textColor="@color/lightGray"
+                    style="@style/textRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Jumlah"
+                    android:textColor="@color/lightGray"
+                    style="@style/textRegular"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/lightGray"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:id="@+id/jumlahProduk"
+                    android:text="5"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:textColor="@color/lightGray"
+                    style="@style/textRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Total"
+                    android:textColor="@color/lightGray"
+                    style="@style/textRegular"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/lightGray"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:id="@+id/total_harga"
+                    android:text="Rp83.000"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:textColor="@color/lightGray"
+                    style="@style/textRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Varian:"
+                    android:textColor="@color/lightGray"
+                    style="@style/textRegular"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/lightGray"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/varian"
+                    android:text="- Coklat"
+                    android:layout_marginLeft="@dimen/margin5"
+                    style="@style/textRegular"
+                    android:textColor="@color/lightGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

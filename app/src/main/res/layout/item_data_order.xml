@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconOrder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/textRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="noname11223344"
+        android:maxLines="1"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/margin10"
+        app:layout_constraintStart_toEndOf="@+id/iconOrder"
+        app:layout_constraintTop_toTopOf="@+id/iconOrder" />
+
+    <TextView
+        android:id="@+id/noTrans"
+        style="@style/textMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_marginLeft="@dimen/margin10"
+        android:text="22012155464"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/iconOrder"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/textRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin10"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="08:25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iconOrder" />
+
+    <TextView
+        android:id="@+id/lainnya"
+        style="@style/textRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin5"
+        android:paddingVertical="@dimen/margin2"
+        android:paddingHorizontal="@dimen/margin5"
+        android:background="@drawable/bg_rounded_btn_scan_product"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Lainnya"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintTop_toTopOf="@+id/iconOrder" />
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/textMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="Rp. 40,000"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="@dimen/margin10"
+        app:layout_constraintTop_toBottomOf="@+id/noTrans" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

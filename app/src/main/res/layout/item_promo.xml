@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:background="@drawable/bg_border_edit_text"
+    android:backgroundTint="@color/lightGray"
+    android:layout_marginVertical="@dimen/margin5"
+    android:paddingHorizontal="@dimen/margin15"
+    android:paddingVertical="@dimen/margin10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgGift"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/lightGray" />
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gratis"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/margin10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgGift"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/titlePromo"
+            style="@style/textRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:textColor="@color/black"
+            android:text="Min Transaksi Rp100,000 bonus potongan 10rb"/>
+
+        <TextView
+            style="@style/textRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:textSize="12sp"
+            android:text="Periode 20 Juni 2021 - 20 Juni 2022"/>
+
+        <TextView
+            style="@style/textRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="@dimen/margin5"
+            android:background="@drawable/bg_rounded_btn_scan_product"
+            android:backgroundTint="@color/blue_parane"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="MANUAL"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin10"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="@dimen/margin5"
+                android:background="@drawable/bg_rounded_btn_scan_product"
+                android:backgroundTint="@color/blue_parane"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Sn"/>
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="@dimen/margin5"
+                android:background="@drawable/bg_rounded_btn_scan_product"
+                android:backgroundTint="@color/blue_parane"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Sl"/>
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="@dimen/margin5"
+                android:background="@drawable/bg_rounded_btn_scan_product"
+                android:backgroundTint="@color/blue_parane"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Rb"/>
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="@dimen/margin5"
+                android:background="@drawable/bg_rounded_btn_scan_product"
+                android:backgroundTint="@color/blue_parane"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Km"/>
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="@dimen/margin5"
+                android:background="@drawable/bg_rounded_btn_scan_product"
+                android:backgroundTint="@color/blue_parane"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Jm"/>
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="@dimen/margin5"
+                android:background="@drawable/bg_rounded_btn_scan_product"
+                android:backgroundTint="@color/blue_parane"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="St"/>
+
+            <TextView
+                style="@style/textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="@dimen/margin5"
+                android:background="@drawable/bg_rounded_btn_scan_product"
+                android:backgroundTint="@color/blue_parane"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Mg"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00b0ff</color>
+    <color name="colorPrimaryDark">#0081cb</color>
+    <color name="colorAccent">@color/blue_fadi</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="blue_parane">#0BBCF4</color>
+
+    <color name="yellow_parane">#FEF687</color>
+
+    <color name="blue_fadi">#0C8CEF</color>
+    <color name="blue_fadi80">#800C8CEF</color>
+
+    <color name="color_blue_gradient_login_1">#2C86F9</color>
+    <color name="color_blue_gradient_login_2">#175EB9</color>
+    <color name="darkBlue">#175EB9</color>
+
+    <color name="color_bg_edit_text_login">#6b9ce7</color>
+
+    <color name="color_tv_blue_btn_login">#165EB9</color>
+
+    <color name="color_tv_copyright_login">#8BAEDC</color>
+
+    <color name="color_black_tv_title_item_home">#393557</color>
+    
+    <color name="color_tv_gray_tv_desc_item_home">#9A9A9A</color>
+
+    <color name="color_gray_tv_name_profil">#555555</color>
+    <color name="mediumGray">#555555</color>
+
+    <color name="color_tv_phone_number_profile">#BCBCBC</color>
+    <color name="lightGray">#BCBCBC</color>
+
+    <color name="overlayLightGray">#80BCBCBC</color>
+
+    <color name="color_bg_divider_profile">#EFEFEF</color>
+
+    <color name="color_btn_red_logout">#FB6B6B</color>
+    <color name="red_warning">#881111</color>
+
+    <color name="color_gray_title_add_dialog">#555555</color>
+    <color name="edit_text_border">#4A4A4A</color>
+
+    <color name="color_gray_border_dialog">#EBEBEB</color>
+
+    <color name="home_fragment_background">#EFF3FC</color>
+    <color name="home_fragment_card">#E0E4EF</color>
+
+    <color name="lightWhite">#F5F5F5</color>
+    <color name="lightOrange">#E69E54</color>
+    <color name="Orange">#f05e23</color>
+
+    <color name="light_green_600">#7CB342</color>
+    <color name="light_green_700">#388E3C</color>
+
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+
+</resources>

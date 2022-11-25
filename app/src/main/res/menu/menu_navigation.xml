@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pelanggan"
+        android:checked="true"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        android:title="Pelanggan" />
+
+    <item
+        android:id="@+id/jenis"
+        android:icon="@drawable/ic_baseline_layers_24"
+        android:title="Jenis" />
+
+    <item
+        android:id="@+id/daftar"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="Daftar" />
+
+    <item
+        android:id="@+id/simpan"
+        android:icon="@drawable/ic_baseline_save_alt_24"
+        android:title="Simpan" />
+
+    <item
+        android:id="@+id/hapus"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="Hapus" />
+
+</menu>

@@ -1,0 +1,42 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/margin5">
+
+        <TextView
+            android:id="@+id/tvTitleToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin15"
+            android:layout_marginRight="@dimen/margin15"
+            fontPath="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/label_profil_title_page"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ivBack"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginLeft="@dimen/margin15"-->
+        <!--            android:src="@drawable/ic_back" />-->
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
+
+
+

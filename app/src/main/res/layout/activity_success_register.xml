@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".view.activity.SuccessRegisterActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_success_register" />
+
+    <TextView
+        style="@style/textMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sukses"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp" />
+
+
+    <TextView
+        style="@style/textMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anda bisa mulai menggunakan Diggo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_height="20dp"
+        android:max="30"
+        android:layout_marginHorizontal="@dimen/margin20"/>
+
+    <TextView
+        style="@style/textMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tunggu sebentar..."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</LinearLayout>

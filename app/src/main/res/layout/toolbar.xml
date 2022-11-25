@@ -1,0 +1,72 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/white"
+    android:elevation="@dimen/margin5"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/margin5">
+
+        <TextView
+            android:id="@+id/tvTitleToolbar"
+            style="@style/textMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivBack"
+            android:layout_alignBottom="@+id/ivBack"
+            android:layout_marginStart="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="@dimen/margin15"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/ivBack"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingStart="@dimen/margin10"
+            android:src="@drawable/ic_baseline_clear_24" />
+
+        <ImageView
+            android:id="@+id/ivHistoryKasir"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:paddingStart="@dimen/margin10"
+            android:src="@drawable/ic_baseline_history_24" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:tint="@color/red_warning" />
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
+
+
+

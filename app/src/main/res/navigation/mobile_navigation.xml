@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_kasir">
+
+    <action
+        android:id="@+id/actionToHome"
+        app:destination="@id/nav_kasir"/>
+
+    <action
+        android:id="@+id/actionToInfoOutlet"
+        app:destination="@+id/infoOutletFragment"/>
+
+    <action
+        android:id="@+id/actionToOpenCashier"
+        app:destination="@id/openCashierFragment"/>
+
+    <action
+        android:id="@+id/actionToCloseKasir"
+        app:destination="@id/closeKasirFragment"/>
+
+    <action
+        android:id="@+id/actionToKomisi"
+        app:destination="@+id/komisiFragment"/>
+
+    <action
+        android:id="@+id/actionToKasKasir"
+        app:destination="@+id/kasKasirFragment"/>
+
+    <action
+        android:id="@+id/actionToPassPin"
+        app:destination="@+id/passwordPinFragment"/>
+
+    <fragment
+        android:id="@+id/nav_kasir"
+        android:name="com.ilisium.onecashier.view.fragment.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/closeKasirFragment"
+        android:name="com.ilisium.onecashier.view.fragment.CloseKasirFragment"
+        android:label="Tutup Kasir"
+        tools:layout="@layout/fragment_close_kasir" />
+
+    <fragment
+        android:id="@+id/openCashierFragment"
+        android:name="com.ilisium.onecashier.view.fragment.cashier.OpenCashierFragment"
+        android:label="Buka kasir"
+        tools:layout="@layout/fragment_open_cashier" />
+
+    <fragment
+        android:id="@+id/selectVarianFragment"
+        android:name="com.ilisium.onecashier.view.fragment.produk.SelectVarianFragment"
+        android:label="fragment_select_varian"
+        tools:layout="@layout/fragment_select_varian" />
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.ilisium.onecashier.view.fragment.checkout.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.ilisium.onecashier.view.fragment.history.HistoryFragment"
+        android:label="HistoryFragment" />
+    <fragment
+        android:id="@+id/detailHistoryFragment"
+        android:name="com.ilisium.onecashier.view.fragment.history.DetailHistoryFragment"
+        android:label="DetailHistoryFragment" />
+    <fragment
+        android:id="@+id/historyKasirFragment"
+        android:name="com.ilisium.onecashier.view.fragment.cashier.HistoryKasirFragment"
+        android:label="fragment_history_kasir"
+        tools:layout="@layout/fragment_history_kasir" />
+    <fragment
+        android:id="@+id/detailHistoryCashierFragment"
+        android:name="com.ilisium.onecashier.view.fragment.cashier.DetailHistoryCashierFragment"
+        android:label="fragment_detail_history_cashier"
+        tools:layout="@layout/fragment_detail_history_cashier" />
+    <fragment
+        android:id="@+id/successCheckoutFragment"
+        android:name="com.ilisium.onecashier.view.fragment.checkout.SuccessCheckoutFragment"
+        android:label="SuccessCheckoutFragment" />
+
+</navigation>
